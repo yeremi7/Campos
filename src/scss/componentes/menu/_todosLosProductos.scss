@@ -1,0 +1,234 @@
+$color1 :hsl(360, 0%, 94%);
+$color2: rgb(236, 231, 231);
+$color3: hsl(360, 0%, 99%);
+$color4 :rgba(0,0,0,.8);
+$color5: #081f30;
+
+.container_de_todos_los_productos{
+    padding: 10% 5%;
+    background-color: $color3;
+}
+
+/* SNACKS */
+.container_snacks{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 600px));
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 70px;
+    column-gap: 170px;
+    justify-content: center;
+    justify-items: start;
+}
+.title_snacks{
+    grid-column: span 2;
+    align-self: center;
+    color: $color4;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* MEALS */
+.container_meals{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 600px));
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 70px;
+    column-gap: 170px;
+    justify-content: center;
+    justify-items: start;
+    margin-top: 9%;
+}
+.title_meals{
+    grid-column: span 2;
+    align-self: center;
+    color: $color4;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Eggsand toast */
+.producto_eggsand_toast{
+    display: grid;
+    grid-template-columns: minmax(50px , 750px) 39px;
+    color: $color4;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.eggsand_toast{
+    font-size: 19px;
+}
+.precio_eggsand_toast{
+    font-size: 18px;
+}
+.definicion_eggsand_toast{
+    padding-top: 2%;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Bread basket */
+.producto_bread_basket{
+    display: grid;
+    grid-template-columns: minmax(50px , 750px) 39px;
+    color: $color4;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.bread_basket{
+    font-size: 19px;
+}
+.precio_bread_basket{
+    font-size: 18px;
+}
+.definicion_bread_basket{
+    padding-top: 2%;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Eggsand bacon */
+.producto_eggsand_bacon{
+    display: grid;
+    grid-template-columns: minmax(50px , 750px) 39px;
+    color: $color4;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.eggsand_bacon{
+    font-size: 19px;
+}
+.precio_eggsand_bacon{
+    font-size: 18px;
+}
+.definicion_eggsand_bacon{
+    padding-top: 2%;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Brunch for two */
+.producto_brunch_for_two{
+    display: grid;
+    grid-template-columns: minmax(50px , 750px) 39px;
+    color: $color4;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.brunch_for_two{
+    font-size: 19px;
+}
+.precio_brunch_for_two{
+    font-size: 18px;
+}
+.definicion_brunch_for_two{
+    padding-top: 2%;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Avocado toast */
+.producto_avocado_toast{
+    display: grid;
+    grid-template-columns: minmax(50px , 750px) 39px;
+    color: $color4;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.avocado_toast{
+    font-size: 19px;
+}
+.precio_avocado_toast{
+    font-size: 18px;
+}
+.definicion_avocado_toast{
+    padding-top: 2%;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Celebration brunch */
+.producto_celebration_brunch{
+    display: grid;
+    grid-template-columns: minmax(50px , 750px) 39px;
+    color: $color4;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.celebration_brunch{
+    font-size: 19px;
+}
+.precio_celebration_brunch{
+    font-size: 18px;
+}
+.definicion_celebration_brunch{
+    padding-top: 2%;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 920px) {
+    .container_snacks{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 0.5fr);
+        column-gap: 0px;
+        row-gap: 45px;
+    }
+    .container_meals{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 0.5fr);
+        column-gap: 0px;
+        row-gap: 45px;
+    }
+    .producto_eggsand_toast{
+        grid-column: span 2;
+        grid-template-rows: 25px 0.4fr;
+        row-gap: 7px;
+    }
+    .producto_bread_basket{
+        grid-column: span 2;
+        grid-template-rows: 25px 0.4fr;
+        row-gap: 7px;
+    }
+    .producto_eggsand_bacon{
+        grid-column: span 2;
+        grid-template-rows: 25px 0.4fr;
+        row-gap: 7px;
+    }
+    .producto_brunch_for_two{
+        grid-column: span 2;
+        grid-template-rows: 25px 0.4fr;
+        row-gap: 7px;
+    }
+    .producto_avocado_toast{
+        grid-column: span 2;
+        grid-template-rows: 25px 0.4fr;
+        row-gap: 7px;
+    }
+    .producto_celebration_brunch{
+        grid-column: span 2;
+        grid-template-rows: 25px 0.4fr;
+        row-gap: 7px;
+    }
+}
+@media screen and( max-width: 550px){
+    .container_snacks{
+        margin-top: 8%;
+    }
+    .title_snacks{
+        margin-top: auto; 
+    }
+}
+@media screen and( max-width: 460px){
+    .title_snacks{
+        margin-top: auto;
+        font-size: 19px; 
+    }
+    .title_meals{
+        font-size: 19px; 
+    }
+}
+@media screen and( max-width: 310px){
+    .definicion_celebration_brunch {
+        padding-top: 14%;
+    }
+}

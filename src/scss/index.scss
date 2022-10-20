@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./componentes/linksBotones/links-botones";
+
+/* Inicio */
+@import "./componentes/inicio/inicio";
+@import "./componentes/inicio/algunosProductos";
+@import "./componentes/inicio/nosImporta";
+@import "./componentes/inicio/informacionAdicional";
+@import "./componentes/inicio/gallery";
+@import "./componentes/inicio/footerBookTable";
+
+/* Menu */
+@import "./componentes/menu/menu";
+@import "./componentes/menu/todosLosProductos";
+@import "./componentes/menu/asideBookATable";
+
+/* Contact */
+@import "./componentes/contact/contact";
+
+/* Book a table */
+@import "./componentes/bookATable/bookATable";
+
+/* Footer Campos */
+@import "./componentes/footer/footerCampos";
+
+/* Alerta */
+@import "./componentes/alerta/alerta";
+
+/* Error 404 */
+@import "./componentes/error404/error404"

@@ -1,0 +1,227 @@
+$color1 :hsl(360, 0%, 94%);
+$color2: rgb(236, 231, 231);
+$color3: hsl(360, 0%, 99%);
+$color4 :rgba(0,0,0,.8);
+$color5: #081f30;
+
+.book_a_table{
+    background-color: $color3;
+    width: 100%;
+    position: absolute;
+    top: 85px;
+}
+
+/* Parte 1 */
+.container_book_a_table{
+    display: grid;
+    grid-template-columns: minmax(50px , 1340px);
+    grid-template-rows: repeat(2, 0.1fr);
+    row-gap: 55px;
+    justify-content: center;
+    justify-items: start;
+    padding: 10% 5%;
+    background-color: #ece6e4;
+}
+.contenido_titulo_principal{
+    grid-row: 1;
+
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        color: $color4;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    p{
+        width: 90%;
+        padding-top: 10px;
+        font-size: 18px;
+        color: $color4;
+        line-height: 1.4;
+        font-family: 'Ibarra Real Nova', serif;
+    }
+}
+.form_book_a_table{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: minmax(50px, 600px);
+    grid-template-rows: repeat(4, 0.1fr);
+    row-gap: 27px;
+    justify-items: start;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.input_name{
+    width: 100%;
+
+    p{
+        color: $color4;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    input{
+        width: 100%;
+        margin-top: .5%;
+        padding: 12px 12px;
+        font-size: 17px;
+        border: none;
+        outline: none;
+        background-color: hsl(360, 10%, 94%);
+        font-family: 'Ibarra Real Nova', serif;
+
+        &::placeholder{
+            font-size: 18px;
+            color: rgba(0,0,0,.5);
+            font-family: 'Ibarra Real Nova', serif;
+        }
+    }
+}
+.input_last_name{
+    width: 100%;
+
+    p{
+        color: $color4;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    input{
+        width: 100%;
+        margin-top: .5%;
+        padding: 12px 12px;
+        font-size: 17px;
+        border: none;
+        outline: none;
+        background-color: hsl(360, 10%, 94%);
+        font-family: 'Ibarra Real Nova', serif;
+
+        &::placeholder{
+            font-size: 18px;
+            color: rgba(0,0,0,.5);
+            font-family: 'Ibarra Real Nova', serif;
+        }
+    }
+}
+.input_email{
+    width: 100%;
+
+    p{
+        color: $color4;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    input{
+        width: 100%;
+        margin-top: .5%;
+        padding: 12px 12px;
+        font-size: 17px;
+        border: none;
+        outline: none;
+        background-color: hsl(360, 10%, 94%);
+        font-family: 'Ibarra Real Nova', serif;
+
+        &::placeholder{
+            font-size: 18px;
+            color: rgba(0,0,0,.5);
+            font-family: 'Ibarra Real Nova', serif;
+        }
+    }
+}
+.input_message{
+    width: 100%;
+
+    p{
+        color: $color4;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    textarea{
+        width: 100%;
+        min-height: 100px;
+        margin-top: .5%;
+        padding: 12px 12px; 
+        font-size: 17px;
+        border: none;
+        outline: none;
+        background-color: hsl(360, 10%, 94%);
+        font-family: 'Ibarra Real Nova', serif;
+
+        &::placeholder{
+            font-size: 18px;
+            color: rgba(0,0,0,.5);
+            font-family: 'Ibarra Real Nova', serif;
+        }
+    }
+}
+.btn-submit{
+    border: none;
+    color: $color3;
+    font-size: 17px;
+    padding: 12px 27px;
+    background-color: hsl(240, 7%, 8%);
+    font-family: 'Ibarra Real Nova', serif;
+    cursor: pointer;
+    transition: background-color .1s linear ;
+    
+    &:hover{
+        background-color: hsla(240, 7%, 8%, .9);
+    }
+    &:active{
+        background-color: hsl(240, 7%, 8%);
+    }
+}
+
+/* Parte 2 */
+.mensaje_adicional{
+    display: grid;
+    grid-template-columns: minmax(100px ,  1366px);
+    grid-template-rows: 0.5fr;
+    justify-content: center;
+    padding: 7% 5%;
+    background-color: $color3;
+
+    P{
+        width: 70%;
+        font-size: 47px;
+        font-weight: 700;
+        color: $color4;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+}
+
+@media screen and (max-width:920px){
+    .mensaje_adicional{
+        P{
+            width: 100%;
+            font-size: 45px;
+        }
+    }
+}
+@media screen and (max-width:550px){
+    .mensaje_adicional{
+        P{
+            font-size: 35px;
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    .contenido_titulo_principal{
+        h1{
+            padding-top: 4%;
+            font-size: 33px;
+            font-weight: 700;
+            color: $color4;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    }
+    .mensaje_adicional{
+        P{
+            font-size: 30px;
+        }
+    }
+}
+@media screen and (max-width: 390px){
+    .mensaje_adicional{
+        P{
+            font-size: 25px;
+        }
+    }
+}
+    

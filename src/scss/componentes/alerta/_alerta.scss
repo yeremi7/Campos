@@ -1,0 +1,39 @@
+.contenidoAlerta{
+    width: 100%;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    top: 100px;
+    animation: slide 3s ease forwards;
+
+    p{
+        padding: 12px 15px;
+        font-size: 16px;
+        color: rgba(0,0,0,0.8);
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0,0,0,.1);
+        background-color: hsl(360, 0%, 99%);
+        font-family: 'Ibarra Real Nova', serif;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateY(-10px);
+            opacity: 0;
+        }
+        10% {
+            transform: translateY(10px);
+            opacity: 1;
+        }
+        90% {
+            transform: translateY(10px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(10px);
+            opacity: 0;
+        }
+    }
+}

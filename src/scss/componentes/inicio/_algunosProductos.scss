@@ -1,0 +1,230 @@
+$color1 :hsl(360, 0%, 94%);
+$color2: rgb(236, 231, 231);
+$color3: hsl(360, 0%, 99%);
+$color4 :rgba(0,0,0,.8);
+$color5: #081f30;
+
+/* Parte 3 */
+.container_de_algunos_productos{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 600px));
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 70px;
+    column-gap: 170px;
+    justify-content: center;
+    justify-items: start;
+    padding: 11% 5%;
+    background-color: $color3;
+}
+.small_bites{
+    grid-column: span 2;
+    color: $color4;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Bagels */
+.producto_bagels{
+    display: grid;
+    grid-template-columns: minmax(50px , 750px) 39px;
+    color: $color4;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.bagels{
+    font-size: 19px;
+}
+.precio_bagels{
+    font-size: 18px;
+}
+.definicion_bagels{
+    padding-top: 2%;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Banana bread */
+.producto_banana_bread{
+    display: grid;
+    grid-template-columns: minmax(50px , 750px) 39px;
+    color: $color4;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.banana_bread{
+    font-size: 19px;
+}
+.precio_banana_bread{
+    font-size: 18px;
+}
+.definicion_banana_bread{
+    font-size: 18px;
+    padding-top: 2%;
+    line-height: 1.4;
+}
+
+/* Bread rolls */
+.producto_bread_rolls{
+    display: grid;
+    grid-template-columns: minmax(50px , 750px) 39px;
+    color: $color4;
+    font-family: 'Ibarra Real Nova', serif;        
+}
+.bread_rolls{
+    font-size: 19px;
+}
+.precio_bread_rolls{
+    font-size: 18px;
+}
+.definicion_bread_rolls{
+    font-size: 18px;
+    padding-top: 2%;
+    line-height: 1.4;
+}
+
+/* 5seeds bread */
+.producto_5seeds_bread{
+    display: grid;
+    grid-template-columns: minmax(50px , 750px) 39px;
+    color: $color4;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.seeds_bread{
+    font-size: 19px;
+}
+.precio_5seeds_bread{
+    font-size: 18px;
+}
+.definicion_5seeds_bread{
+    font-size: 18px;
+    padding-top: 2%;
+    line-height: 1.4;
+}
+
+/* French bread */
+.producto_french_bread{
+    display: grid;
+    grid-template-columns: minmax(50px , 750px) 39px;
+    color: $color4;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.french_bread{
+    font-size: 19px;
+}
+.precio_french_bread{
+    font-size: 18px;
+}
+.definicion_french_bread{
+    font-size: 18px;
+    padding-top: 2%;
+    line-height: 1.4;
+}
+
+/* Organic toast */
+.producto_organic_toast{
+    display: grid;
+    grid-template-columns: minmax(50px , 750px) 39px;
+    color: $color4;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.organic_toast{
+    font-size: 19px;
+}
+.precio_organic_toast{
+    font-size: 18px;
+}
+.definicion_organic_toast{
+    font-size: 18px;
+    padding-top: 2%;
+    line-height: 1.4;
+}
+a{
+    button{
+        border: none;
+        color: $color3;
+        font-size: 17px;
+        padding: 12px 27px;
+        background-color: hsl(240, 7%, 8%);
+        font-family: 'Ibarra Real Nova', serif;
+        cursor: pointer;
+        transition: background-color .1s linear ;
+        
+        &:hover{
+            background-color: hsla(240, 7%, 8%, .9);
+        }
+        &:active{
+            background-color: hsl(240, 7%, 8%);
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .container_de_algunos_productos{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 0.5fr);
+        column-gap: 0px;
+        row-gap: 45px;
+    }
+    .producto_bagels{
+        grid-column: span 2;
+        grid-template-rows: 25px 0.4fr;
+        row-gap: 7px;
+    }
+    .producto_banana_bread{
+        grid-column: span 2;
+        grid-template-rows: 25px 0.4fr;
+        row-gap: 7px;
+    }
+    .producto_bread_rolls{
+        grid-column: span 2;
+        grid-template-rows: 25px 0.4fr;
+        row-gap: 7px;
+    }
+    .producto_5seeds_bread{
+        grid-column: span 2;
+        grid-template-rows: 25px 0.4fr;
+        row-gap: 7px;
+    }
+    .producto_french_bread{
+        grid-column: span 2;
+        grid-template-rows: 25px 0.4fr;
+        row-gap: 7px;
+    }
+    .producto_organic_toast{
+        grid-column: span 2;
+        grid-template-rows: 25px 0.4fr;
+        row-gap: 7px;
+    }
+    a{
+        grid-column: span 2;
+        justify-self: center;
+        
+        button{
+            border: none;
+            color: $color3;
+            font-size: 17px;
+            padding: 12px 27px;
+            background-color: hsl(240, 7%, 8%);
+            font-family: 'Ibarra Real Nova', serif;
+            cursor: pointer;
+            transition: background-color .1s linear ;
+
+            &:hover{
+                background-color: hsla(240, 7%, 8%, .9);
+            }
+            &:active{
+                background-color: hsl(240, 7%, 8%);
+            }
+        }
+    }
+}
+@media screen and( max-width: 550px){
+    .small_bites{
+        margin-top: auto;
+        font-size: 35px; 
+    }
+}
+
+
+

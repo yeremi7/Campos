@@ -1,0 +1,99 @@
+$color1 :hsl(360, 0%, 94%);
+$color2: rgb(236, 231, 231);
+$color3: hsl(360, 0%, 99%);
+$color4 :rgba(0,0,0,.8);
+$color5: #081f30;
+
+.footer_campos{
+    padding: 9% 5%;
+    color: $color4;
+    background-color: hsl(360, 15%, 88%);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 600px));
+    grid-template-rows: repeat(4, 0.5fr);
+    column-gap: 150px;
+    row-gap: 45px;
+    justify-content: center;
+    justify-items: start;
+}
+.footer_title_campos{
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 29px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.container_establecimiento{
+    grid-row: 2;
+    grid-column: 1;
+    font-size: 18px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.container_dias_apertura{
+    grid-row: 3;
+    grid-column: 1;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.container_dias_extra_apertura{
+    grid-row: 4;
+    grid-column: 1;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.container_lugar{
+    grid-row: 2;
+    grid-column: 2;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.contactanos{
+    grid-row: 3;
+    grid-column: 2;
+    font-size: 18px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+@media screen and (max-width: 920px) {
+    .footer_campos{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 0.5fr);
+        column-gap: 0px;
+        row-gap: 35px;
+        justify-content: start;
+    }
+    .container_lugar{
+        grid-row: 5;
+        grid-column: 1;
+        font-size: 18px;
+        font-family: 'Ibarra Real Nova', serif;
+    }
+    .contactanos{
+        grid-row: 6;
+        grid-column: 1;
+        font-size: 18px;
+        font-family: 'Ibarra Real Nova', serif;
+    }
+}
+@media screen and (max-width: 550px) {
+    .container_establecimiento{
+        font-size: 19px;
+    }
+    .container_dias_apertura{
+        font-size: 19px;
+    }
+    .container_dias_extra_apertura{
+        font-size: 19px;
+    }
+    .container_lugar{
+        font-size: 19px;
+    }
+    .contactanos{
+        font-size: 19px;
+    }
+}

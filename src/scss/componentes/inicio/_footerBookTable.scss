@@ -1,0 +1,74 @@
+$color1 :hsl(360, 0%, 94%);
+$color2: rgb(236, 231, 231);
+$color3: hsl(360, 0%, 99%);
+$color4 :rgba(0,0,0,.8);
+$color5: #081f30;
+
+/* Parte 7 */
+.container_footer_book_table{
+    display: grid;
+    grid-template-columns: minmax(100px , 1366px);
+    grid-template-rows: repeat(3, 0.1fr);
+    row-gap: 27px;
+    justify-content: center;
+    padding: 8% 5%;
+    color: $color1;
+    background-color: hsl(240, 7%, 8%);
+
+    h1{
+        grid-row: 1;
+        font-size: 43px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    p{
+        grid-row: 2;
+        width: 37%;
+        padding-top: 1%;
+        font-size: 21px;
+        font-family: 'Ibarra Real Nova', serif;
+    }
+    a{  
+        grid-row: 3;
+        justify-self: start;
+
+        button{
+            font-size: 15px;
+            color: $color4;
+            background-color: $color3;
+            font-family: 'Ibarra Real Nova', serif;
+            transition: background-color .1s linear;
+
+            &:hover{ 
+                background-color: hsl(360, 0%, 90%);
+            }
+            &:active{ 
+                background-color: $color3;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .container_footer_book_table{
+        p{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .container_footer_book_table{
+        padding: 15% 5%;
+        
+        h1{
+            font-size: 35px;
+        }
+        p{
+            font-size: 19px;
+        }
+        a{
+            button{
+                font-size: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+$color1 :hsl(360, 0%, 94%);
+$color2: rgb(236, 231, 231);
+$color3: hsl(360, 0%, 99%);
+$color4 :rgba(0,0,0,.8);
+$color5: #081f30;
+
+.links_botones{
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 5% minmax(100px , 680px) minmax(100px , 680px) 5%;
+    grid-template-rows: 85px;
+    justify-content: center;
+    justify-items: start;
+    z-index: 3;
+    font-family: 'Roboto slab', sans-serif;
+    background-color: hsl(360, 10%, 10%);
+}
+.titleLogo{
+    font-weight: 700;
+    color: white;
+    grid-column: 2 / span 1;
+    align-self: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav_link{
+    grid-column: 3 / span 1;
+    justify-self: end;
+    align-self: center;
+    font-family: 'Montserrat', serif;
+    
+    a{
+        margin: 1em 1.7em;
+        font-size: 15px;
+        color: $color1;
+        list-style: none;
+        text-decoration: none;
+
+        &:hover{
+            border-bottom: 1px solid $color1;
+            padding-bottom: 3px;
+        }
+        &.active{
+            border-bottom: 1px solid $color1 ;
+            padding-bottom: 3px;
+        }
+    }
+}
+.faBars{
+    background-color: $color1;
+    display: none;
+}
+
+@media screen and (max-width: 920px) {
+    .titleLogo{
+        grid-column: 2 / span 1;
+        justify-self: start;
+    }
+    .nav_link{
+        grid-column: span 3;
+        z-index: 2;
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: hsl(360, 10%, 10%);
+        position: fixed;
+        top: 82px;
+        transform-origin: top center;
+        transform: scale(1, 0);
+        padding-bottom: 1%;
+        transition: transform .1s ease-in;
+        
+        a{
+            margin: 1em 1.7em;
+            font-size: 16px;
+            color: $color1;
+            list-style: none;
+            text-decoration: none;
+            border-bottom: 1px solid hsl(360, 10%, 10%);
+            padding-bottom: 3px;
+    
+            &:hover{
+                border-bottom: 1px solid $color1;
+                padding-bottom: 3px;
+            }
+            &.active{
+                border-bottom: 1px solid $color1 ;
+                padding-bottom: 3px;
+            }
+        }
+    }
+    .desplazar{
+        transform-origin: top center;
+        transform: scale(1, 1);
+    }    
+    .faBars{
+        font-size: 17px;
+        display: block;
+        grid-column: 3 / span 1;
+        justify-self: end;
+        align-self: center;
+        cursor: pointer;
+    }
+    .sombra{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 82px;
+        z-index: 1;
+        visibility: hidden;
+        background-color:rgba(0, 0, 0, 0.4);
+        transition: .1s ease-in background-color; 
+        will-change: height;    
+    }
+}
